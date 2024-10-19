@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enovo - Environmental Awareness</title>
+    <link rel="stylesheet" href="enovocss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/YSvEcxy/videoblocks-aerial-view-on-coniferous-forest-landscape-view-of-endless-pine-forest-drone-copter-view_bqdpkcigd__4970a899cf409483672ddeeb7f767e24__P360.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div> <!-- Dark overlay to enhance readability -->
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="data:image/jpeg;base64,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" alt="Enovo Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h1>About Enovo</h1>
+            <p>Enovo is dedicated to raising environmental awareness and promoting eco-friendly solutions for a sustainable future. We are committed to making the world greener, one initiative at a time.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Initiatives</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Energy Saving Tips</h3>
+                    <p>Learn how to reduce your energy consumption with simple, effective tips.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Recycling Programs</h3>
+                    <p>Discover how we help communities implement effective recycling strategies.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-solar-panel"></i>
+                    <h3>Solar Power Solutions</h3>
+                    <p>Explore our solar energy options to make your home or business more sustainable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Join us in making a difference! Contact us for more information on how you can contribute to a greener planet.</p>
+            <a href="mailto:contact@enovo.com" class="btn">Contact Us</a>
+            
+            <!-- User Details Form -->
+            <form class="user-details-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Enovo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
 
